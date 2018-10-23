@@ -40,7 +40,7 @@ Es posible quedebas configurar las opciones de aqruitectura del procesador:
 
 Una vez modificadas, vamos a lanzar de nuevo nuestros Test:
 
-![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step62.png)
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step8.png)
 
 
 # Integrar los test en nuestra app web
