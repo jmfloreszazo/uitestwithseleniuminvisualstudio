@@ -137,6 +137,8 @@ Una vez instalado vamos a verificar que esté bien instalado.
 
 Desde un terminal de PowerShell y ejecutamos el siguiente comando: `docker version` Y `docker run hello-world` para ver que Docker puede descargar y ejecutar imágenes.
 
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step24.png)
+
 Perfecto, el primer paso está dado.
 
 Ahora vamos a buscar una imagen para Docker con Seleium:
