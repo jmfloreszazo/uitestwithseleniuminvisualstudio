@@ -123,3 +123,5 @@ Como ves es muy simple ejecutar test de UI usando Selenium y el driver de Chrome
 # Integración con Docker
 
 Ahora vamos a ir un paso más allá y vamos a intentar usar Docker para testear una DevBox con nuestra WebApp y así el departamento de QA pueda trabajar de una forma más estandarizada.
+
+Este punto está en edición. En breve podrás leerlo.
