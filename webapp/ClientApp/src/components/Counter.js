@@ -22,9 +22,9 @@ export class Counter extends Component {
 
         <p>This is a simple example of a React component.</p>
 
-        <p>Current count: <strong>{this.state.currentCount}</strong></p>
+            <p>Current count: <strong><div id="CurrentCounter">{this.state.currentCount}</div></strong></p>
 
-        <button onClick={this.incrementCounter}>Increment</button>
+        <button onClick={this.incrementCounter} id="Increment">Increment</button>
       </div>
     );
   }
