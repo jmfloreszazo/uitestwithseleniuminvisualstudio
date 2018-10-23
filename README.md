@@ -131,4 +131,14 @@ Como ves es muy simple ejecutar test de UI usando Selenium y el driver de Chrome
 
 Ahora vamos a ir un paso más allá y vamos a intentar usar Docker para testear una DevBox con nuestra WebApp y así el departamento de QA pueda trabajar de una forma más estandarizada.
 
+El primer paso, es entrar en y descargar la aplicación para Windows desde https://store.docker.com
+
+Una vez instalado vamos a verificar que esté bien instalado.
+
+Desde un terminal de PowerShell y ejecutamos el siguiente comando: `docker version` Y `docker run hello-world` para ver que Docker puede descargar y ejecutar imágenes.
+
+Perfecto, el primer paso está dado.
+
+Ahora vamos a buscar una imagen para Docker con Seleium:
+
 Este punto está en edición. En breve podrás leerlo.
