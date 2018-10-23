@@ -96,11 +96,30 @@ Pues vamos a escribir un test para la Web App.
 
 Lo primero será modificar el ejemplo para que podamos hacer algun tipo de validación propiamente dicha de un test:
 
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step19.png)
 
+Y designamos a lo controles que deseamos testear con un Id.
 
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step20.png)
 
+Al designarlos con un Id es más sencillo localizarlos cuando usamos el WebDriver de Selenium, es un ejemplo de toma de contacto, como podrás ver en la documentación del WebDriver, podemos hacer incluso búsquedas para traernos colecciones de objetos (ver documentación de Selenium https://www.seleniumhq.org/docs/)
 
+En nuestro caso vamos a testear si puedo hacer click en el botón y si al realizar varios click el incremento tiene el valor que deseamos.
 
+Lo primero que vamos a realizar es añadir una nueva clase de Test:
 
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step21.png)
+
+Al igual que en el ejemplo de Hello World, vamos a renombrar la clase y añadir el siguiente código:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step22.png)
+
+Ahora podrás ejecutar los test, como pequeño nota, si nunca has lanzado test anteriormente, puedes incluso realizar un debugg sobre ellos:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step23.png)
+
+Como ves es muy simple ejecutar test de UI usando Selenium y el driver de Chrome.
 
 # Integración con Docker
+
+Ahora vamos a ir un paso más allá y vamos a intentar usar Docker para testear una DevBox con nuestra WebApp y así el departamento de QA pueda trabajar de una forma más estandarizada.
