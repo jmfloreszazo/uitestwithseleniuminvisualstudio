@@ -48,4 +48,29 @@ Como podrás haber observado en la anterior animación, estamos lanzando una ses
 
 # Integrar los test en nuestra app web
 
+Teneis varias opciones para crear el proyecto "webapp", en mi caso os he dejado todo en una sola solución debido a que yo lo estoy publicando en servidor IIS. Si no quires tenerlo de esta forma, puedes crear una nueva solución y añadir el proyecto, así se ejecutará en IIS Express los test y la web app de forma independiente.
+
+Comentado ese punto, vamos a crear la webapp dentro de la solución:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step10.png)
+
+Del tipo ASP.Net Core:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step11.png)
+
+Y con el font-end en React.JS (podeir ver mi libro de react en https://github.com/jmfloreszazo/ebook):
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step12.png)
+
+Vamos a probar que funciona correctamente. Establecemos el proyecto para que se inicie: 
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step13.png)
+
+
+
+
+
+
+
+
 # Integración con Docker
