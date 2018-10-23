@@ -114,9 +114,16 @@ Al igual que en el ejemplo de Hello World, vamos a renombrar la clase y añadir 
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step22.png)
 
-Ahora podrás ejecutar los test, como pequeño nota, si nunca has lanzado test anteriormente, puedes incluso realizar un debugg sobre ellos:
+Ejecutar los test y comprueba el resultado. ¿Sale todo en verde?
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step23.png)
+
+Como pequeña nota, si nunca has lanzado test anteriormente, puedes incluso realizar un debugg sobre los test. Y si no te suena que es la directiva:
+
+```cs
+Assert.AreEqual(currentCounter, stopValue.ToString());
+```
+Pues empezar a estudiar los test unitarios desde: https://msdn.microsoft.com/es-es/library/dd264975.aspx
 
 Como ves es muy simple ejecutar test de UI usando Selenium y el driver de Chrome.
 
