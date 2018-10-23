@@ -42,6 +42,9 @@ Una vez modificadas, vamos a lanzar de nuevo nuestros Test:
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step8.gif)
 
+Como podrás haber observado en la anterior animación, estamos lanzando una sesión de Chrome a la url https://www.google.com/ donde localizamos la caja de busqueda e introducimos "Hello World! Sample" y ejecutamos el botón para que nos muestre la busqueda que hemos pedido. Por tanto nuestro test debe terminar con éxito:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step9.png)
 
 # Integrar los test en nuestra app web
 
