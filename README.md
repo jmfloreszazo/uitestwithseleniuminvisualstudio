@@ -70,11 +70,33 @@ Ahora en mi caso realizo la publicación para tener on-line mi servidor de test 
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step14.png)
 
-En el caso que tenas dos soluciones, deberás lanzar la app web y volver a la solucione de UI Test.
+En el caso que tengas dos soluciones, deberás lanzar la app web y volver a la solucione de UI Test.
 
-Ya tenemos la web corriendo. Ahora es el mommento de instalar "Katalon Recorder (Selenium IDE for Chrome)"
+Ya tenemos la web corriendo y publicada.
+
+Ahora es el mommento de instalar "Katalon Recorder (Selenium IDE for Chrome)".
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step15.png)
 
 Una vez instalado, verá que tienes un nuevo icono en tu barra de Chrome:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step16.png)
+
+El IDE de Katalon, es muy sencillo, principalmente guarda los pasos que vamos realizando cuando interactuamos con la web app.
+
+Como podrás observar, tiene la opción de "Start", "Stop", "Play",...  familiarizate con el. Una vez que lo tengas visto, continua con el tutorial.
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step17.png)
+
+Como habrás podido averiguar, podemos exportar el contenido del test en diversos formatos, incluido MTest para C#. Aunque es buena opción para lo novatos, o para aquellos entornos que no hemos programado nosotros y queremos conocer los Ids de los controles de forma rápida, pero si la web app es nuestra, lo mejor es que uno mismo escriba los test. 
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step18.png)
+
+Pues vamos a escribir un test para la Web App.
+
+Lo primero será modificar el ejemplo para que podamos hacer algun tipo de validación propiamente dicha de un test:
+
+
 
 
 
