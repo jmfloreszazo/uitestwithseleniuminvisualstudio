@@ -1,4 +1,4 @@
-# UI test with Selenium in Visual Studio
+# UI test con Selenium en Visual Studio
 
 A continuación voy a mostrar como utilizar Visual Studio 2017 para realizar test de UI con Selenium.
 
