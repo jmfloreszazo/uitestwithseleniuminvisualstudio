@@ -58,7 +58,7 @@ Del tipo ASP.Net Core:
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step11.png)
 
-Y con el font-end en React.JS (podeir ver mi libro de react en https://github.com/jmfloreszazo/ebook):
+Y con el font-end en React.JS, podeir ver mi libro de React en https://github.com/jmfloreszazo/ebook:
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step12.png)
 
@@ -66,7 +66,15 @@ Vamos a probar que funciona correctamente. Establecemos el proyecto para que se 
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step13.png)
 
+Ahora en mi caso realizo la publicación para tener on-line mi servidor de test con la aplicación web:
 
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step14.png)
+
+En el caso que tenas dos soluciones, deberás lanzar la app web y volver a la solucione de UI Test.
+
+Ya tenemos la web corriendo. Ahora es el mommento de instalar "Katalon Recorder (Selenium IDE for Chrome)"
+
+Una vez instalado, verá que tienes un nuevo icono en tu barra de Chrome:
 
 
 
