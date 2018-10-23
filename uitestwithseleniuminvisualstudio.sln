@@ -5,6 +5,19 @@ VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uitestwithseleniuminvisualstudio", "uitestwithseleniuminvisualstudio\uitestwithseleniuminvisualstudio.csproj", "{ADF98FAE-4659-4A78-AD5F-366D0ED5FBAA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{22FB4D41-C4F0-4C4A-8199-9483D61662AB}"
+	ProjectSection(SolutionItems) = preProject
+		..\images\animated_gif.gif = ..\images\animated_gif.gif
+		..\images\Step1.png = ..\images\Step1.png
+		..\images\Step2.png = ..\images\Step2.png
+		..\images\Step3.png = ..\images\Step3.png
+		..\images\Step4.png = ..\images\Step4.png
+		..\images\Step5.png = ..\images\Step5.png
+		..\images\Step61.png = ..\images\Step61.png
+		..\images\Step62.png = ..\images\Step62.png
+		..\images\Step7.png = ..\images\Step7.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
