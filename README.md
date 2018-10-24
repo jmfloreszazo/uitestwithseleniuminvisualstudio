@@ -141,6 +141,42 @@ Desde un terminal de PowerShell y ejecutamos el siguiente comando: `docker versi
 
 Perfecto, el primer paso está dado.
 
-Como en este tutorial no está centrado en Docker si no, en publicar una solución ASP.NET Core para hacer test de Selenium.
+Como en este tutorial no está centrado en Docker, si no, en publicar una solución en Docker para hacer test de Selenium; por tanto vamos a clonar este proyecto: 
 
-Este punto está en edición. En breve podrás leerlo.
+`git clone https://github.com/jmfloreszazo/aspnetappfordockertest`
+
+Es un proyecto ASP.NET MVC, Ejecutalo. Se trata de otra versión de un contador de clicks:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step25.png)
+
+Y ahora es el momento de publicar nuestra aplicación web en Docker con el siguiente comando:
+
+`Docker run --rm -it -p 8000:80 -v [path_local_clonado]\aspnetappfordockertest:/app/ -w /app/aspnetappfordockertest microsoft/dotnet:2.1-sdk dotnet watch run`
+
+Donde `[path_local_clonado]` es la ruta donde ejecutaste `git clone`
+
+Tras unos instantes, Docker arrancará:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step26.png)
+
+Ya puedes ir a tu navegador Chorme y en `localhost:8000` podrás acceder a tu aplicación web. Hemo redirigido el  puerto 8000 a la máquina de Docker.
+
+Es una versión build.
+
+Si entras en la solución "aspnetappfordockertest" podrás ver una carpeta llamada "Solutions Items". Cuyo contenido es el siguiente:
+
+* `.dockerignore`: directiva para Docker que indica que carpeta no vamos a incluir; lo puedes complicar todo lo que desees.
+* `Directory.Build.props`: para personalizar nuestro proyecto (https://docs.microsoft.com/es-es/visualstudio/msbuild/customize-your-build?view=vs-2017#directorybuildprops-and-directorybuildtargets)
+* `Dockerfile`: es el proceso que hemos usado para automatizar Docker.
+
+Y si los has revisado podrás observar la siguiente instrucción en `Dockerfile`:
+
+`RUN dotnet publish -c Release -o out`
+ 
+Es decir una `build` en toda regla.
+ 
+Con Docker corriendo, regresamos a la solución "uitestwithseleniuminvisualstudio" y creamos un nuevo test:
+
+FALTA IMAGEN
+
+Lo lanzamos y efecticamente, ya hemos probado nuestra aplicación web en build.
