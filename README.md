@@ -1,6 +1,6 @@
 # UI test con Selenium en Visual Studio
 
-A continuación voy a mostrar como utilizar Visual Studio 2017 para realizar test de UI con Selenium.
+A continuación, voy a mostrar cómo utilizar Visual Studio 2017 para realizar test de UI con Selenium.
 
 # Nuestro primer Test: Hello World!
 
@@ -34,7 +34,7 @@ Si el test da un error:
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step62.png)
 
-Es posible quedebas configurar las opciones de aqruitectura del procesador:
+Es posible quedabas configurar las opciones de arquitectura del procesador:
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step7.png)
 
@@ -42,15 +42,15 @@ Una vez modificadas, vamos a lanzar de nuevo nuestros Test:
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step8.gif)
 
-Como podrás haber observado en la anterior animación, estamos lanzando una sesión de Chrome a la url https://www.google.com/ donde localizamos la caja de busqueda e introducimos "Hello World! Sample" y ejecutamos el botón para que nos muestre la busqueda que hemos pedido. Por tanto nuestro test debe terminar con éxito:
+Como podrás haber observado en la anterior animación, estamos lanzando una sesión de Chrome a la url https://www.google.com/ donde localizamos la caja de búsqueda e introducimos "Hello World! Sample" y ejecutamos el botón para que nos muestre la búsqueda que hemos pedido. Por tanto, nuestro test debe terminar con éxito:
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step9.png)
 
 # Integrar los test en nuestra app web
 
-Teneis varias opciones para crear el proyecto "webapp", en mi caso os he dejado todo en una sola solución debido a que yo lo estoy publicando en servidor IIS. Si no quires tenerlo de esta forma, puedes crear una nueva solución y añadir el proyecto, así se ejecutará en IIS Express los test y la web app de forma independiente.
+Tenéis varias opciones para crear el proyecto "webapp", en mi caso os he dejado todo en una sola solución debido a que yo lo estoy publicando en servidor IIS. Si no quieres tenerlo de esta forma, puedes crear una nueva solución y añadir el proyecto, así se ejecutará en IIS Express los test y la web app de forma independiente.
 
-Comentado ese punto, vamos a crear la webapp dentro de la solución:
+Comentado ese punto, vamos a crear la web app dentro de la solución:
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step10.png)
 
@@ -58,7 +58,7 @@ Del tipo ASP.Net Core:
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step11.png)
 
-Y con el font-end en React.JS, podeir ver mi libro de React en https://github.com/jmfloreszazo/ebook:
+Y con el font-end en React.JS, podéis ver mi libro de React en https://github.com/jmfloreszazo/ebook:
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step12.png)
 
@@ -74,7 +74,7 @@ En el caso que tengas dos soluciones, deberás lanzar la app web y volver a la s
 
 Ya tenemos la web corriendo y publicada.
 
-Ahora es el mommento de instalar "Katalon Recorder (Selenium IDE for Chrome)".
+Ahora es el momento de instalar "Katalon Recorder (Selenium IDE for Chrome)".
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step15.png)
 
@@ -84,17 +84,17 @@ Una vez instalado, verá que tienes un nuevo icono en tu barra de Chrome:
 
 El IDE de Katalon, es muy sencillo, principalmente guarda los pasos que vamos realizando cuando interactuamos con la web app.
 
-Como podrás observar, tiene la opción de "Start", "Stop", "Play",...  familiarizate con el. Una vez que lo tengas visto, continua con el tutorial.
+Como podrás observar, tiene la opción de "Start", "Stop", "Play”, ...  familiarízate con él. Una vez que lo tengas visto, continua con el tutorial.
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step17.png)
 
-Como habrás podido averiguar, podemos exportar el contenido del test en diversos formatos, incluido MTest para C#. Aunque es buena opción para lo novatos o para aquellos entornos que no hemos programado nosotros y queremos conocer los Ids de los controles de forma rápida, pero si la web app es nuestra, lo mejor es que uno mismo escriba los test. 
+Como habrás podido averiguar, podemos exportar el contenido del test en diversos formatos, incluido MTest para C#. Aunque es buena opción para los novatos o para aquellos entornos que no hemos programado nosotros y queremos conocer los Ids de los controles de forma rápida, pero si la web app es nuestra, lo mejor es que uno mismo escriba los test. 
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step18.png)
 
 Pues vamos a escribir un test para la Web App.
 
-Lo primero será modificar el ejemplo para que podamos hacer algun tipo de validación propiamente dicha de un test:
+Lo primero será modificar el ejemplo para que podamos hacer algún tipo de validación propiamente dicha de un test:
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step19.png)
 
@@ -104,7 +104,7 @@ Y designamos a lo controles que deseamos testear con un Id.
 
 Al designarlos con un Id es más sencillo localizarlos cuando usamos el WebDriver de Selenium, es un ejemplo de toma de contacto, como podrás ver en la documentación del WebDriver, podemos hacer incluso búsquedas para traernos colecciones de objetos (ver documentación de Selenium https://www.seleniumhq.org/docs/)
 
-En nuestro caso vamos a testear si puedo hacer click en el botón y si al realizar varios click el incremento tiene el valor que deseamos.
+En nuestro caso vamos a testear si puedo hacer clic en el botón y si al realizar varios clic el incremento tiene el valor que deseamos.
 
 Lo primero que vamos a realizar es añadir una nueva clase de Test:
 
@@ -118,7 +118,7 @@ Ejecutar los test y comprueba el resultado. ¿Sale todo en verde?
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step23.png)
 
-Como pequeña nota, si nunca has lanzado test anteriormente, puedes incluso realizar un debugg sobre los test. Y si no te suena que es la directiva:
+Como pequeña nota, si nunca has lanzado test anteriormente, puedes incluso realizar una depuración sobre los test. Y si no te suena que es la directiva:
 
 ```cs
 Assert.AreEqual(currentCounter, stopValue.ToString());
@@ -137,8 +137,35 @@ Una vez instalado vamos a verificar que esté bien instalado.
 
 Desde un terminal de PowerShell y ejecutamos el siguiente comando: `docker version` Y `docker run hello-world` para ver que Docker puede descargar y ejecutar imágenes.
 
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step24.png)
+
 Perfecto, el primer paso está dado.
 
-Ahora vamos a buscar una imagen para Docker con Seleium:
+Ahora descargamos la imagen de `microsoft/dotnet`:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step25.png)
+
+Arrancamos y vemos que en el bash podemos ejecutar algun comando:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step26.png)
+
+Salimos y paramos la máquina:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step27.png)
+
+Creamos un fichero `Dockerfile` en el proyecto de "webapp" con el siguiente contenido:
+
+```
+FROM microsoft/dotnet AS build
+
+FALTA ....
+
+```
+
+Y lo ejecutamos en PowerShell:
+
+Solo te queda entrar en el navegador local y verás que ....
+
+En el fichero `Dockerfile`
 
 Este punto está en edición. En breve podrás leerlo.
