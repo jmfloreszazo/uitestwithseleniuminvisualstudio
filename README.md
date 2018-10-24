@@ -181,14 +181,10 @@ Con Docker corriendo, regresamos a la solución "uitestwithseleniuminvisualstudi
 
 Lo lanzamos y efecticamente, ya hemos probado nuestra aplicación web en build.
 
-# Selenium con Docker VS. Web App en Docker
-
-Vamos a lanzar nuestros Test UI con un Docker que tiene Selenium WebDriver contra un Docker que tiene nuestra aplicación Web.
+# Selenium Grid Hub
 
 Falta por redactar...
 
 # Integrar los Test UI en nuestro ciclo CI/CD
-
-Ahora metemos Azure DevOps para que todo lo que hemos aprendido forme parte de nuestro ciclo de CI/CD.
 
 Falta por redactar...
