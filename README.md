@@ -177,6 +177,18 @@ Es decir una `build` en toda regla.
  
 Con Docker corriendo, regresamos a la solución "uitestwithseleniuminvisualstudio" y creamos un nuevo test:
 
-FALTA IMAGEN
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step27.png)
 
 Lo lanzamos y efecticamente, ya hemos probado nuestra aplicación web en build.
+
+# Selenium con Docker VS. Web App en Docker
+
+Vamos a lanzar nuestros Test UI con un Docker que tiene Selenium WebDriver contra un Docker que tiene nuestra aplicación Web.
+
+Falta por redactar...
+
+# Integrar los Test UI en nuestro ciclo CI/CD
+
+Ahora metemos Azure DevOps para que todo lo que hemos aprendido forme parte de nuestro ciclo de CI/CD.
+
+Falta por redactar...
