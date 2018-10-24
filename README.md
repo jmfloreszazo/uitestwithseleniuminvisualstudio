@@ -141,11 +141,11 @@ Desde un terminal de PowerShell y ejecutamos el siguiente comando: `docker versi
 
 Perfecto, el primer paso está dado.
 
-Como en este tutorial no está centrado en Docker si no, en publicar una solución en Docker para hacer test de Selenium, vamos a clonar este proyecto: 
+Como en este tutorial no está centrado en Docker, si no, en publicar una solución en Docker para hacer test de Selenium; por tanto vamos a clonar este proyecto: 
 
 `git clone https://github.com/jmfloreszazo/aspnetappfordockertest`
 
-Se trata de un proyecto ASP.NET MVC, ejecutalo. Se trata de otra versión de un contador de clicks:
+Es un proyecto ASP.NET MVC, Ejecutalo. Se trata de otra versión de un contador de clicks:
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step25.png)
 
@@ -159,13 +159,9 @@ Tras unos instantes, Docker arrancará:
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step26.png)
 
-Ya puedes ir a tu navegador Chorme y en `localhost:8000` podrás acceder a tu aplicación web.
+Ya puedes ir a tu navegador Chorme y en `localhost:8000` podrás acceder a tu aplicación web. Hemo redirigido el  puerto 8000 a la máquina de Docker.
 
-Una vez que veas que funciona la aplicación web, es cuando vamos a ejecutar los test. Para ello, vamos a crear un nuevo test:
-
-Lo lanzamos y efecticamente, ya hemos probado nuestra aplicación web en build.
-
-¿Por qué digo en build?
+Es una versión build.
 
 Si entras en la solución "aspnetappfordockertest" podrás ver una carpeta llamada "Solutions Items". Cuyo contenido es el siguiente:
 
@@ -177,5 +173,10 @@ Y si los has revisado podrás observar la siguiente instrucción en `Dockerfile`
 
 `RUN dotnet publish -c Release -o out`
  
- Es decir una `Build` en toda regla.
+Es decir una `build` en toda regla.
  
+Con Docker corriendo, regresamos a la solución "uitestwithseleniuminvisualstudio" y creamos un nuevo test:
+
+FALTA IMAGEN
+
+Lo lanzamos y efecticamente, ya hemos probado nuestra aplicación web en build.
