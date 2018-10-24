@@ -141,6 +141,31 @@ Desde un terminal de PowerShell y ejecutamos el siguiente comando: `docker versi
 
 Perfecto, el primer paso está dado.
 
-Ahora vamos a buscar una imagen para Docker con Seleium:
+Ahora descargamos la imagen de `microsoft/dotnet`:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step25.png)
+
+Arrancamos y vemos que en el bash podemos ejecutar algun comando:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step26.png)
+
+Salimos y paramos la máquina:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step27.png)
+
+Creamos un fichero `Dockerfile` en el proyecto de "webapp" con el siguiente contenido:
+
+```
+FROM microsoft/dotnet AS build
+
+FALTA ....
+
+```
+
+Y lo ejecutamos en PowerShell:
+
+Solo te queda entrar en el navegador local y verás que ....
+
+En el fichero `Dockerfile`
 
 Este punto está en edición. En breve podrás leerlo.
