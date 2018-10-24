@@ -181,10 +181,16 @@ Con Docker corriendo, regresamos a la solución "uitestwithseleniuminvisualstudi
 
 Lo lanzamos y efecticamente, ya hemos probado nuestra aplicación web en build.
 
-# Selenium Grid Hub
-
-Falta por redactar...
+# Selenium Grid
+ 
+Falta...
 
 # Integrar los Test UI en nuestro ciclo CI/CD
 
-Falta por redactar...
+Falta...
+
+# Para finalizar...
+
+Una pequeño truco.
+
+Yo lo uso como una ayuda a la tediosa tarea de rellenar datos en un formulario web que debo completar para poder llegar a una nueva funcionalidad que estoy programando. Esta automatización, posteriormente la transformo en un test.
