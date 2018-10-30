@@ -220,7 +220,22 @@ services:
 Una vez guardado el fichero, ya podemos poner en pie nuesto hub. En un terminal de `PowerShell`, nos situamos en la carpeta donde hemos creado el fichero YAML y ejecutamos:
 
 ```
-docker-compose up
+docker-compose up -d
+```
+Vamos a ver como a ver que están en funcionamiento, por ejemplo, con unas estadísticas:
+
+```
+docker stats
+```
+
+o bien, habrir el navegador:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step29.png)
+
+Y para parar el hub solamente tenemos que hacer:
+
+```
+docker-compose down
 ```
 
 Esperamos a que se realize el Pull y se levanten las máquinas y ya podemos ver 
