@@ -182,8 +182,57 @@ Con Docker corriendo, regresamos a la solución "uitestwithseleniuminvisualstudi
 Lo lanzamos y efecticamente, ya hemos probado nuestra aplicación web en build.
 
 # Selenium Grid
- 
-Falta...
+
+Lo usaremos para ejecuttar pruebas en diferentes navegadores y sistemas operativos.
+
+Su arquitectura es muy simple: un hub y uno o más nodos.
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step28.png)
+
+Ejecutas los test en un hub de docker y este hub distribuye el test en diferentes navegadores del hub.
+
+La opción que yo uso es `Docker-Compose`, una herramienta para definir y ejecutar aplicaciones Docker multi-contenedor. 
+
+Utiliza un archivo `YAML` para configurar los servicios de la aplicación. Y con un solo comando se crean e inicial los servicios.
+
+Mediante un editor de texto vamos a crear el archivo: `docker-compose.yml`, con el siguiente contenido.
+
+```yaml
+version: '3'
+services:
+  firefox:
+    image: selenium/node-firefox:3.12.0-cobalt
+    volumes:
+      - /dev/shm:/dev/shm
+    shm_size: '2gb'
+    depends_on:
+      - hub
+    environment:
+     HUB_HOST: hub
+
+  chrome:
+    image: selenium/node-chrome:3.12.0-cobalt
+    volumes:
+      - /dev/shm:/dev/shm
+    shm_size: '2gb'
+    depends_on:
+      - hub
+    environment:
+      HUB_HOST: hub
+
+  hub:
+    image: selenium/hub:3.12.0-cobalt
+    ports:
+      - "4444:4444"
+```
+
+Una vez guardado el fichero, ya podemos poner en pie nuesto hub. En un terminal de `PowerShell`, nos situamos en la carpeta donde hemos creado el fichero YAML y ejecutamos:
+
+```
+docker-compose up
+```
+
+Esperamos a que se realize el Pull y se levanten las máquinas y ya podemos ver 
 
 # Integrar los Test UI en nuestro ciclo CI/CD
 
