@@ -238,7 +238,31 @@ Y para parar el hub solamente tenemos que hacer:
 docker-compose down
 ```
 
-Esperamos a que se realize el Pull y se levanten las máquinas y ya podemos ver 
+Ahora vamos a clonar: 
+
+`git clone https://github.com/jmfloreszazo/paralleluitestwithseleniuminvisualstudio`
+
+Este proyecto ejecutará test en paralelo contra el nodo chrome y el nodo firefox.
+
+Para ejecutar test en paralelo debemo marcar esta opción:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step30.png)
+
+Vamos a la carpeta del proyecto para lanzar:
+
+```
+docker-compose up -d
+```
+
+Y ahora es cuando vamos a ejecutar nuestros test:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step32.png)
+
+Si observais el código, os he puesto un pequeño tip: capturas de pantallas según va ejecutando el código.
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step31.png)
+
+Ya hemos visto como ejecutar test en paralelo y si lo has ejecutado habrá visto que terminan los test con errores. Por supuesto, ya que uno de los test está conectando contra ...
 
 # Integrar los Test UI en nuestro ciclo CI/CD
 
