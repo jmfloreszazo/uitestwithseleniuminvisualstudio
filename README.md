@@ -197,31 +197,22 @@ Utiliza un archivo `YAML` para configurar los servicios de la aplicación. Y con
 
 Mediante un editor de texto vamos a crear el archivo: `docker-compose.yml`, con el siguiente contenido.
 
-```yaml
-version: '3'
+```yamlversion: '3'
 services:
   firefox:
-    image: selenium/node-firefox:3.12.0-cobalt
-    volumes:
-      - /dev/shm:/dev/shm
-    shm_size: '2gb'
+    image: selenium/node-firefox
     depends_on:
       - hub
     environment:
      HUB_HOST: hub
-
   chrome:
-    image: selenium/node-chrome:3.12.0-cobalt
-    volumes:
-      - /dev/shm:/dev/shm
-    shm_size: '2gb'
+    image: selenium/node-chrome
     depends_on:
       - hub
     environment:
       HUB_HOST: hub
-
   hub:
-    image: selenium/hub:3.12.0-cobalt
+    image: selenium/hub
     ports:
       - "4444:4444"
 ```
