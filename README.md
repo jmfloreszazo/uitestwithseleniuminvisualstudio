@@ -177,6 +177,20 @@ Es decir una `build` en toda regla.
  
 Con Docker corriendo, regresamos a la solución "uitestwithseleniuminvisualstudio" y creamos un nuevo test:
 
-FALTA IMAGEN
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step27.png)
 
 Lo lanzamos y efecticamente, ya hemos probado nuestra aplicación web en build.
+
+# Selenium Grid
+ 
+Falta...
+
+# Integrar los Test UI en nuestro ciclo CI/CD
+
+Falta...
+
+# Para finalizar...
+
+Una pequeño truco.
+
+Yo lo uso como una ayuda a la tediosa tarea de rellenar datos en un formulario web que debo completar para poder llegar a una nueva funcionalidad que estoy programando. Esta automatización, posteriormente la transformo en un test.
