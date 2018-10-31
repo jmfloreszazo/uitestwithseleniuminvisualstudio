@@ -262,13 +262,49 @@ Si observais el código, os he puesto un pequeño tip: capturas de pantallas seg
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step31.png)
 
-Ya hemos visto como ejecutar test en paralelo y si lo has ejecutado habrá visto que terminan los test con errores. Por supuesto, ya que uno de los test está conectando contra nuestro Docker `microsoft/dotnet`:
+Ya hemos visto como ejecutar test en paralelo y si lo has ejecutado habrá visto que terminan los test con errores. Por supuesto, ya que uno de los test está conectando contra nuestra Web App alojada en Azure.
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step33.png)
 
+De nuevo añadimos una proyecto web app MVC. Cuando termine la testearemos en Docker, pero esta vez vamos a crear las propiedades Docker desde el propio entorno de Visual Studio 2017.
+
+Sigue los pasos de la primera parte de la imagen:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step34.png)
+
+Podrás ver que hemos creado un proyecto Docker asociado a nuestra WebApp, que aun mantenemos nuestro Selenium Grid (segunda imagen) en el proyecto de Test y que en la barra de herramientas nos poner un nuevo proyecto para ejecutar (imagen 3), en este caso lanza la web app, pero podemos editar el documento `docker-compose.yml` del proyecto Docker para que lancemos la web app, selenium hub y cuando esté levantado, lanzar los test. No voy a entrar en más detalles de Docker.
+
+En el fujo de desarrollo, imaginar que estamos implementando una nueva funcionalidad, ya la has terminado, lanzado en el Docker `microsoft/dotnet` y tienes claro que es el momento de pasar los test de UI. 
+
+La forma en que yo realizo este proceso es publicando nuestra web app en un servidor Web de test/dev. Y si no tengo uno ya creado, suelo publicarlo en Azure:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step35.png)
+
+Y accedemos al sitio que hemos creado para ver que funciona todo:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step36.png)
+
+Una vez que ya hemos publicado, nos toca lanzar los test. Añadiendo más información a nuestra configuración, podemos decirle a la aplicación donde está nuestro servidor de test:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step38.png)
+
+Llegó el momento de lanzar los Test:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step37.png)
+
+Perfecto, ya tenemos un flujo de trabajo donde lanzamos de forma parelela los test contra Chrome y Firefox en nuestra Web App.
+
+El siguiente paso es incluir el Docker selenium/hub para que podamos validar los test y si procede publicar la release de nuestra web app.
+
 # Integrar los Test UI en nuestro ciclo CI/CD
 
-Falta...
+Todos los conocimientos anteriores los vamos a poner en juego para que nuestras releases tengan un punto más de seguridad al obligar a pasar los test de UI.
+
+Los tests de UI son un filtro más hacia la excelencia.
+
+Pongamonos manos a la obra.
+
+Falta por terminar...
 
 # Para finalizar...
 
