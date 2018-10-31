@@ -228,7 +228,7 @@ Vamos a ver como a ver que están en funcionamiento, por ejemplo, con unas estad
 docker stats
 ```
 
-o bien, habrir el navegador:
+o bien, abrir el navegador:
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step29.png)
 
