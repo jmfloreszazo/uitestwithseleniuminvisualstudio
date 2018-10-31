@@ -262,7 +262,9 @@ Si observais el código, os he puesto un pequeño tip: capturas de pantallas seg
 
 ![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step31.png)
 
-Ya hemos visto como ejecutar test en paralelo y si lo has ejecutado habrá visto que terminan los test con errores. Por supuesto, ya que uno de los test está conectando contra ...
+Ya hemos visto como ejecutar test en paralelo y si lo has ejecutado habrá visto que terminan los test con errores. Por supuesto, ya que uno de los test está conectando contra nuestro Docker `microsoft/dotnet`:
+
+![](https://github.com/jmfloreszazo/uitestwithseleniuminvisualstudio/blob/master/readmeimages/Step33.png)
 
 # Integrar los Test UI en nuestro ciclo CI/CD
 
